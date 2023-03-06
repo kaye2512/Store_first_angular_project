@@ -15,26 +15,34 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatTableModule} from "@angular/material/table";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { HeaderComponent } from './components/header/header.component';
+import {MatIconModule} from "@angular/material/icon";
+import { HomeComponent } from './pages/home/home.component';
+import { ProductHeaderComponent } from './pages/home/components/product-header/product-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    ProductHeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-      MatSidenavModule,
-      MatGridListModule,
-      MatMenuModule,
-      MatButtonModule,
-      MatCardModule,
-      MatExpansionModule,
-      MatListModule,
-      MatToolbarModule,
-      MatTableModule,
-      MatBadgeModule,
-      MatSnackBarModule
+    MatSidenavModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatCardModule,
+    MatExpansionModule,
+    MatListModule,
+    MatToolbarModule,
+    MatTableModule,
+    MatBadgeModule,
+    MatSnackBarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
